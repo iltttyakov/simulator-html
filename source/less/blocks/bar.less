@@ -1,0 +1,46 @@
+.bar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  &--mobile {
+    display: none;
+  }
+}
+
+.bar__label {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.bar__container {
+  width: 285px;
+  height: 16px;
+
+  background-color: #DFDFDF;
+  border-radius: 3px;
+}
+
+.bar__progress {
+  height: 100%;
+
+  background: #053CFF;
+  border-radius: inherit;
+}
+
+@media (max-width: 994px) {
+  .bar {
+    display: none;
+
+    &--mobile {
+      display: block;
+    }
+  }
+
+  .bar__container {
+    width: 100%;
+  }
+}

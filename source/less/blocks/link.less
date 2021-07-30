@@ -1,0 +1,44 @@
+.link {
+  display: flex;
+  margin-bottom: 7px;
+
+  font-family: "Formular", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  text-decoration-line: underline;
+  color: #000000;
+  white-space: nowrap;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  &:hover,
+  &:focus {
+    fill: #053CFF;
+    color: #053CFF;
+  }
+
+  &--blue {
+    fill: #053CFF;
+
+    font-size: 18px;
+    line-height: 25px;
+    color: #053CFF;
+
+    transition: all 0.2s ease;
+
+    &:hover,
+    &:focus {
+      fill: #000000;
+      color: #000000;
+    }
+  }
+}
+
+.link__icon {
+  margin-left: 19px;
+  margin-top: 5px;
+
+  transform: rotate(180deg);
+}
